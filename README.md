@@ -49,7 +49,7 @@ fastapi-book-project/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/hng12-devbotops/fastapi-book-project.git
+git clone https://github.com/Morg3an/fastapi-book-project.git
 cd fastapi-book-project
 ```
 
@@ -119,6 +119,26 @@ Available genres:
 ```bash
 pytest
 ```
+
+## 📦 Deployment Instructions
+
+### Deploy on Render
+
+1. Create an account at Render.
+
+2. Connect your GitHub repository.
+
+3. Set up environment variables in the Render dashboard.(if any)
+
+4. Use the following Build & Start Commands:
+```bash
+pip install -r requirements.txt
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+5. Click Deploy.
+
+### Your API will be live at https://your-app.onrender.com 🚀
 
 ## Error Handling
 
